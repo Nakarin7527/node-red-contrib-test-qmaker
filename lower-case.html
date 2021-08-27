@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    RED.nodes.registerType('lower-case',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            inP: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "parser-base64.png",
+        label: function() {
+            return this.inP||"lower-case";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="lower-case">
+    <div class="form-row">
+        <label for="node-input-inP"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-inP" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="lower-case">
+    <p>A simple node that converts the message payloads into all lower-case characters</p>
+</script>

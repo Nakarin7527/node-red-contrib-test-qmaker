@@ -1,0 +1,20 @@
+{
+  "name": "node-red-contrib-test-qmaker",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "node-red",
+    "qmaker",
+    "test q"
+  ],
+  "node-red": {
+    "nodes": {
+      "lower-case": "lower-case.js"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "test_case": "^1.0.2"
+  }
+}
